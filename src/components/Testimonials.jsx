@@ -129,7 +129,7 @@ const Testimonials = () => {
                           width: "100%",
                         }}
                       >
-                        <div className="testimonials_slide-inner">
+                        <div className="testimonials_slide-inner p-4 sm:p-0!">
                           <p className="testimonials_text">"{t.text}"</p>
 
                           <div className="testimonials_author">

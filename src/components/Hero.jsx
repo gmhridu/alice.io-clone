@@ -1,5 +1,5 @@
 import { DotLottiePlayer } from "@dotlottie/react-player";
-import React from "react";
+
 
 const Hero = () => {
   return (
@@ -8,11 +8,11 @@ const Hero = () => {
         <div className="container-large">
           <div className="hero_component">
             <div className="section_heading is-small-gap">
-              <div className="heading-eyebrow font-semibold">INNOVATE UNAFRAID</div>
+              <div className="heading-eyebrow">INNOVATE UNAFRAID</div>
               <h1 className="font-light">
                 Security, Safety, and Trust
                 <br />
-                <span className="text-style-italic">for the AI Era</span>
+                <span className="font-semibold italic">for the AI Era</span>
               </h1>
             </div>
 

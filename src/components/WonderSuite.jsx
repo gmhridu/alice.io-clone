@@ -69,11 +69,14 @@ const WonderSuite = () => {
         <div className="container-large">
           <div className="intro_component">
             <div className="section_heading">
-              <div className="heading-eyebrow is-wide">Introducing</div>
+              <div className="heading-eyebrow font-medium is-wide">
+                Introducing
+              </div>
               <div className="divider"></div>
 
-              <h2 className="heading-style-h1 text-style-italic">
-                <span className="letter-swoosh">W</span>onderSuite
+              <h2 className="heading-style-h1 italic font-semibold!">
+                <span className="letter-swoosh font-semibold!">W</span>
+                onderSuite
               </h2>
 
               <div className="section_subheading">
@@ -83,7 +86,10 @@ const WonderSuite = () => {
                 </h2>
               </div>
 
-              <a href="/products/platform" className="button w-button">
+              <a
+                href="/products/platform"
+                className="button w-variant-231b04cb-9d1a-e33b-7dac-9451a1e22084 w-button"
+              >
                 {" "}
                 Platform Overview{" "}
               </a>
@@ -113,6 +119,7 @@ const WonderSuite = () => {
                       <div className="intro_tabs-link-heading">
                         <div className="icon-medium">
                           <DotLottiePlayer
+                            key={`${tab.title}-${isActive}`}
                             src={tab.iconLottieSrc}
                             autoplay={isActive}
                             loop={isActive}

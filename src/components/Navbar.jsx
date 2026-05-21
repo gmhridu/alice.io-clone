@@ -57,8 +57,8 @@ const Navbar = () => {
       <div className="nav_container flex items-center justify-between w-nav-brand w--current">
         {/* Logo */}
         <Link to="/" className="nav_brand">
-          <div className="nav_logo">
-            <DotLottiePlayer src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695690f25531fe602f2c9037_4772e5615fa131b58a310e2ca95ad9e2_LOGO.json" />
+          <div className="flex items-center justify-center">
+            <img src="/logo/logo icon.svg" alt="logo icon" className="size-10"/>
           </div>
         </Link>
 
