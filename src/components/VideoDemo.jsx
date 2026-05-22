@@ -19,7 +19,7 @@ const VideoDemo = () => {
               <div className="vimeo-video-wrapper stroke-shadow-dark">
                 {/* Poster Image */}
                 <img
-                  src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/696672852c03c4c72a9bcbf6_Demo%20Video%20Thumbnail.avif"
+                  src="/video-demo/poster-image.avif"
                   loading="lazy"
                   alt=""
                   className="vimeo_poster"

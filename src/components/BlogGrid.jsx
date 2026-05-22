@@ -1,5 +1,3 @@
-
-
 const BlogGrid = () => {
   return (
     <div className="no-mobile">
@@ -8,7 +6,6 @@ const BlogGrid = () => {
           <div className="padding-global">
             <div className="container max-w-340 mx-auto">
               <div className="news-cards_wrapper">
-
                 {/* Heading */}
                 <div className="text-align-center">
                   <h2>
@@ -34,7 +31,7 @@ const BlogGrid = () => {
                       >
                         <div className="card_item-asset">
                           <img
-                            src="https://cdn.prod.website-files.com/690342d0de7772098a5575f1/6954fb2daa33b7a94c50224e_Guardrails.svg"
+                            src="/blog-grid/blog-grid-logo-one.svg"
                             loading="lazy"
                             alt=""
                             className="card_item-img-tag"
@@ -90,7 +87,7 @@ const BlogGrid = () => {
                       >
                         <div className="card_item-asset">
                           <img
-                            src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/69834a4a3c9c7bcf1c2abdaf_Podcast%20icon.svg"
+                            src="/blog-grid/blog-grid-logo-two.svg"
                             loading="lazy"
                             alt=""
                             className="card_item-img-tag"

@@ -6,7 +6,7 @@ const Differentiators = () => {
 
 
   return (
-    <section className="">
+    <section>
       <InteractiveHero />
     </section>
   );

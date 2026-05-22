@@ -1,10 +1,11 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import interactiveLottie from "../../assets/interactive-lottie/interactive-lottie.json";
 
 const InteractiveHero = () => {
   return (
     <div className="interactive-hero-wrapper">
       <DotLottieReact
-        src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695f42c2b37d7d8a59c5d709_interactive-home.json"
+        data={interactiveLottie}
         autoplay
         loop
         mode="forward"
@@ -13,7 +14,7 @@ const InteractiveHero = () => {
       />
 
       <img
-        src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695f43cae38bdbbb595b81bf_046dafd558a2582a42a7c0d3cda1dff8_acountable_bg-line.svg"
+        src="/interactive/interactive.svg"
         alt=""
         className="interactive-hero-bg"
         loading="lazy"
