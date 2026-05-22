@@ -1,6 +1,7 @@
-import React from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import React from "react";
 
+/* ===================== EYE COMPONENT ===================== */
 const Eye = ({ offset = 0, idPrefix = "eye" }) => {
   const leftClip = `${idPrefix}-left`;
   const rightClip = `${idPrefix}-right`;
@@ -46,9 +47,10 @@ const Eye = ({ offset = 0, idPrefix = "eye" }) => {
 /* ===================== MAIN COMPONENT ===================== */
 const ProblemStatement = () => {
   return (
-    <section className="section-accountable relative">
+
+    <section className="section-accountable pt-20">
       <div className="padding-global padding-section-small is-account">
-        <div className="container mx-auto">
+        <div className="container max-w-340 mx-auto">
           <div className="accontable_component">
             {/* Heading */}
             <div className="section_heading">
@@ -135,11 +137,13 @@ const ProblemStatement = () => {
       </div>
 
       {/* Lottie Background */}
-      <div className="absolute left-0 w-full h-auto pointer-events-none">
+      <div className="acountable_bg-image is-bottom" style={{ marginBottom: "-3.7%" }}>
         <DotLottieReact
           src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695690f2692f96f7d1012aa3_027d2687b8bf89b67e1a18d4b0b01baf_RABIT%20IN%20BOAT.lottie"
           autoplay
           loop
+          className="block"
+          style={{ display: "block" }}
         />
       </div>
     </section>
