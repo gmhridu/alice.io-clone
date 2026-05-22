@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="section-hero">
       <div className="padding-global padding-section-medium is-home">
-        <div className="container-large">
+        <div className="container max-w-340 mx-auto">
           <div className="hero_component">
             <div className="section_heading is-small-gap">
               <div className="heading-eyebrow">INNOVATE UNAFRAID</div>

@@ -18,7 +18,7 @@ const Stats = () => {
   return (
     <section className="section-numbers">
       <div className="padding-global padding-section-small">
-        <div className="container-small">
+        <div className="container max-w-220 mx-auto">
           <div className="numbers_component">
             {/* Heading */}
             <div className="section_heading">

@@ -66,7 +66,7 @@ const WonderSuite = () => {
   return (
     <section className="section-intro">
       <div className="padding-global padding-section-medium">
-        <div className="container-large">
+        <div className="container max-w-340 mx-auto">
           <div className="intro_component">
             <div className="section_heading">
               <div className="heading-eyebrow font-medium is-wide">

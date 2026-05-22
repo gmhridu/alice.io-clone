@@ -93,7 +93,7 @@ const Testimonials = () => {
         onMouseMove={handleMouseMove}
       >
         <div className="padding-global padding-section-huge">
-          <div className="container-small">
+          <div className="container max-w-220 mx-auto">
             <div className="testimonials_component">
               <div
                 className="testimonials_slider w-slider"
@@ -129,7 +129,7 @@ const Testimonials = () => {
                           width: "100%",
                         }}
                       >
-                        <div className="testimonials_slide-inner p-4 sm:p-0!">
+                        <div className="testimonials_slide-inner p-4 sm:p-2!">
                           <p className="testimonials_text">"{t.text}"</p>
 
                           <div className="testimonials_author">
@@ -264,7 +264,7 @@ const Testimonials = () => {
 
       {/* ==================== Cards Section ==================== */}
       <div className="padding-global padding-section-medium">
-        <div className="container-large">
+        <div className="container max-w-340 mx-auto">
           <div className="cards_component">
             <div className="section_heading">
               <h2 className="max-width-xxlarge">

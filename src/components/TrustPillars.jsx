@@ -1,11 +1,10 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import React from "react";
 
 const AlicePeaceOfMind = () => {
   return (
     <section className="section-peace">
       <div className="padding-global padding-section-medium">
-        <div className="container-large">
+        <div className="container max-w-340 mx-auto">
           <div className="peace_component">
             {/* Heading */}
             <div className="section_heading">

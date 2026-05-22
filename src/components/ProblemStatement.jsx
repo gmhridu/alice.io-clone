@@ -1,7 +1,6 @@
 import React from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-/* ===================== EYE COMPONENT ===================== */
 const Eye = ({ offset = 0, idPrefix = "eye" }) => {
   const leftClip = `${idPrefix}-left`;
   const rightClip = `${idPrefix}-right`;
@@ -48,8 +47,8 @@ const Eye = ({ offset = 0, idPrefix = "eye" }) => {
 const ProblemStatement = () => {
   return (
     <section className="section-accountable">
-      <div className=" padding-section-small is-account px-[8rem] mt-20">
-        <div className="container-large">
+      <div className="padding-global padding-section-small is-account">
+        <div className="container mx-auto">
           <div className="accontable_component">
             {/* Heading */}
             <div className="section_heading">
