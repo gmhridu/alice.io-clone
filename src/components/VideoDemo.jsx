@@ -10,8 +10,8 @@ const VideoDemo = () => {
   return (
     <section id="explainer" className="section-protected">
       <div className="padding-global padding-section-medium">
-        <div className="container-large">
-          <div className="grid grid-cols-2 gap-6">
+        <div className="container max-w-340 mx-auto">
+          <div className="grid sm:grid-cols-2 grid-cols-1 gap-6">
             <div className="relative">
               <div className="absolute -right-2 -bottom-2 w-full h-full border-black border pointer-events-none z-0 " />
 

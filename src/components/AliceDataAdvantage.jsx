@@ -1,5 +1,4 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import React from "react";
 
 const AliceDataAdvantage = () => {
   return (
@@ -8,7 +7,7 @@ const AliceDataAdvantage = () => {
         className="section-advantage"
       >
         <div className="padding-global padding-section-medium">
-          <div className="container-large">
+          <div className="container max-w-340 mx-auto">
             <div className="advantage_component">
               <div>
                 <DotLottieReact

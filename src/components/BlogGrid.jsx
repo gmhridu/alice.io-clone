@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const BlogGrid = () => {
   return (
@@ -6,7 +6,7 @@ const BlogGrid = () => {
       <section className="section-new">
         <div className="padding-section-medium">
           <div className="padding-global">
-            <div className="container-large">
+            <div className="container max-w-340 mx-auto">
               <div className="news-cards_wrapper">
 
                 {/* Heading */}

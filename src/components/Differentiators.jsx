@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import InteractiveHero from "./icons/interactive-hero";
 

@@ -1,22 +1,21 @@
-
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const InteractiveHero = () => {
   return (
     <div className="relative w-full sm:pt-28! pt-10">
       <div className="sm:mb-13!">
-      <DotLottieReact
-        src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695f42c2b37d7d8a59c5d709_interactive-home.json"
-        autoplay
-        loop
-        mode="forward"
-        backgroundColor="transparent"
-        style={{
-          width: "100%",
-          height: "auto",
-          maxHeight: "550px",
-        }}
-      />
+        <DotLottieReact
+          src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695f42c2b37d7d8a59c5d709_interactive-home.json"
+          autoplay
+          loop
+          mode="forward"
+          backgroundColor="transparent"
+          style={{
+            width: "100%",
+            height: "auto",
+            maxHeight: "550px",
+          }}
+        />
       </div>
 
       {/* Decorative Background Line */}
