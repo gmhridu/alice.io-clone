@@ -1,4 +1,5 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import aliceDataAdvantage from "../assets/alice-data-advantage-lottie/alice-data-advantage-lottie.json";
 
 const AliceDataAdvantage = () => {
   return (
@@ -11,7 +12,7 @@ const AliceDataAdvantage = () => {
             <div className="advantage_component">
               <div>
                 <DotLottieReact
-                  src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695f3e910e92ff5b35ff898c_advantage-show.lottie"
+                  data={aliceDataAdvantage}
                   autoplay
                   loop
                 />

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import wonderBuildLottie from "../assets/wondersuite-lottie/wounder-builder-lottie.json";
+import wonderFenceLottie from "../assets/wondersuite-lottie/wonder-fence-lottie.json";
+import wonderCheckLottie from "../assets/wondersuite-lottie/wonder-check-lottie.json";
 
 const WonderSuite = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -9,33 +12,27 @@ const WonderSuite = () => {
     {
       id: "Tab 1",
       title: "WonderBuild",
-      iconLottieSrc:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695a5c48f0fa7619c8ccee0b_887069796c974a61836b319d58ccb92c_Screw.lottie",
+      iconLottieSrc: wonderBuildLottie,
       heading: "Pre-Launch Stress Testing",
       description: "Comprehensive evaluation before deployment",
-      image:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/69fb92b707dbee5a94e0b14f_WFINAL.jpg",
+      image: "/wonder-suite/wonder-build.jpg",
     },
     {
       id: "Tab 2",
       title: "WonderFence",
-      iconLottieSrc:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695bbddc61db3898e0c95413_3dbd1ce0b4e0ab31ec61dabf5ed8ce7d_Shield2.lottie",
+      iconLottieSrc: wonderFenceLottie,
       heading: "Dynamic Runtime Guardrails",
       description: "Real-time protection for your AI applications",
-      image:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/69fb8fea74eadfbe5277d319_WB.jpg",
+      image: "/wonder-suite/wonder-fence.jpg",
     },
     {
       id: "Tab 3",
       title: "WonderCheck",
-      iconLottieSrc:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695bbdda8f56e61075595ee5_35a0169550eb55eac675e1b7db8bea4d_magnify2k.json",
+      iconLottieSrc: wonderCheckLottie,
       heading: "Ongoing Automated Red-Teaming",
       description:
         "Evaluation for production AI systems to detect drift, surface emerging risks, and prioritize remediation",
-      image:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/69fb8fa225b537b4e5eb703e_WC_10.jpg",
+      image: "/wonder-suite/wonder-check.jpg",
     },
   ];
 
@@ -120,7 +117,7 @@ const WonderSuite = () => {
                         <div className="icon-medium">
                           <DotLottieReact
                             key={`${tab.title}-${isActive}`}
-                            src={tab.iconLottieSrc}
+                            data={tab.iconLottieSrc}
                             autoplay={isActive}
                             loop={isActive}
                             style={{ width: "2rem", height: "2rem" }}

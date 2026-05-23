@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import CardOne from "../assets/testimonials-lottie/testimonial-card-one-lottie.json";
+import CardTwo from "../assets/testimonials-lottie/testimonial-card-two-lottie.json";
+import CardThree from "../assets/testimonials-lottie/testimonial-card-three-lottie.json";
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,8 +28,7 @@ const Testimonials = () => {
 
   const cards = [
     {
-      lottie:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695a5c4729166e3fc1083b7a_3544bf8016c478364747bde5ab4b7bff_card.lottie",
+      lottie: CardOne,
       title: (
         <>
           Epic, Real-World
@@ -39,8 +41,8 @@ const Testimonials = () => {
       research...`,
     },
     {
-      lottie:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695a5c47b48a893c5b9e1edc_49a41b2a29e4882a55a00d0f75bd8c67_door.lottie",
+      lottie: CardTwo,
+
       title: (
         <>
           The Rabbit Hole
@@ -52,8 +54,7 @@ const Testimonials = () => {
       sharper classifiers and fuel stronger red-teaming...`,
     },
     {
-      lottie:
-        "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695a5c471a2c4314249d723f_582ff493e6e7f37f0fc4aede46c11fdd_key.lottie",
+      lottie: CardThree,
       title: (
         <>
           Adaptive, Customizable
@@ -133,9 +134,7 @@ const Testimonials = () => {
                           <p className="testimonials_text">"{t.text}"</p>
 
                           <div className="testimonials_author">
-                            <div className="text-weight-medium">
-                              {t.name}
-                            </div>
+                            <div className="text-weight-medium">{t.name}</div>
 
                             <div>{t.title}</div>
                           </div>
@@ -153,7 +152,7 @@ const Testimonials = () => {
                       setCurrentSlide(
                         (prev) =>
                           (prev - 1 + testimonials.length) %
-                          testimonials.length
+                          testimonials.length,
                       )
                     }
                     className="size-4 flex items-center justify-center text-[#6E6D6B] hover:text-gray-900 transition-colors cursor-pointer"
@@ -191,7 +190,7 @@ const Testimonials = () => {
                   <button
                     onClick={() =>
                       setCurrentSlide(
-                        (prev) => (prev + 1) % testimonials.length
+                        (prev) => (prev + 1) % testimonials.length,
                       )
                     }
                     className="size-4 flex items-center justify-center text-[#6E6D6B] hover:text-gray-900 transition-colors cursor-pointer"
@@ -218,7 +217,7 @@ const Testimonials = () => {
         {/* Background Images */}
         <img
           loading="lazy"
-          src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695fcff4328dc47fb8108837_82cf7d7d0d47934de81015a25868dd9b_middle.svg"
+          src="/testimonials/testimonial-bg-image-one.svg"
           alt=""
           className="teastimonials_bg-image is-middle"
           style={{
@@ -233,7 +232,7 @@ const Testimonials = () => {
 
         <img
           loading="lazy"
-          src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695fcff4334c013e46320b38_09fe41fa7b20fe7ce83ba0879367c84c_front.svg"
+          src="/testimonials/testimonial-bg-image-two.svg"
           alt=""
           className="teastimonials_bg-image is-front"
           style={{
@@ -248,7 +247,7 @@ const Testimonials = () => {
 
         <img
           loading="lazy"
-          src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695fcff45bee8a26c6bd6d3d_e1166c82f455d41a0e2aec102825fbd1_rare.svg"
+          src="/testimonials/testimonial-bg-image-three.svg"
           alt=""
           className="teastimonials_bg-image is-rare"
           style={{
@@ -270,9 +269,7 @@ const Testimonials = () => {
               <h2 className="max-width-xxlarge">
                 From UGC to GenAI and humanoid robots, Alice allows you and your
                 users to{" "}
-                <span className="text-style-italic">
-                  advance unafraid.
-                </span>
+                <span className="text-style-italic">advance unafraid.</span>
               </h2>
             </div>
 
@@ -281,7 +278,7 @@ const Testimonials = () => {
                 <div key={index} className="card_item stroke-shadow">
                   <div className="card_top">
                     <DotLottieReact
-                      src={card.lottie}
+                      data={card.lottie}
                       autoplay
                       loop
                       style={{ width: "80px", height: "80px" }}
