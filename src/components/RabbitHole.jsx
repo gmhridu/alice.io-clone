@@ -1,5 +1,5 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-import React from "react";
+import rabbitHole from "../assets/rabbit-hole-lottie/rabbithole-lottie.json";
 
 const RabbitHole = () => {
   return (
@@ -28,12 +28,8 @@ const RabbitHole = () => {
 
               <div className="flex flex-col items-center justify-center gap-6">
                 {/* Lottie Animation */}
-                <div className="sm:w-[350px]!">
-                  <DotLottieReact
-                    src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695f9fbeb32bc160a7cc70c7_rabit%20with%20key.lottie"
-                    autoplay
-                    loop
-                  />
+                <div className="sm:w-87.5!">
+                  <DotLottieReact data={rabbitHole} autoplay loop />
                 </div>
 
                 {/* Content */}

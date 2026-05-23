@@ -1,5 +1,5 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-
+import animationData from "../assets/hero-lottie/hero-lottie.json";
 
 const Hero = () => {
   return (
@@ -28,9 +28,7 @@ const Hero = () => {
       {/* Hero Illustration / River */}
       <div className="hero_image-wrapper">
         <DotLottieReact
-          src={
-            "https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/6956a61097d36459536e00e0_c1d7ccc14a955f62034cbc528441a3aa_HERO.lottie"
-          }
+          data={animationData}
           autoplay
           loop
         />

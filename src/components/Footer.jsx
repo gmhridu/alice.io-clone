@@ -1,4 +1,5 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import animationData from "../assets/footer-lottie/footer-lottie.json";
 
 const Footer = () => {
   return (
@@ -387,7 +388,7 @@ const Footer = () => {
         {/* Footer Lottie Animation */}
         <div className="overflow-hidden -mx-4 md:-mx-6 lg:-mx-8">
           <DotLottieReact
-            src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695690f207b1e3b583581f37_7c331b1540be05740c098ee285af33a0_FOOTER.lottie"
+            data={animationData}
             autoplay
             loop
             className="footer_lottie"

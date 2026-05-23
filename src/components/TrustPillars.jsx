@@ -1,4 +1,7 @@
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import trustedLottie from "../assets/trusted-lottie/trusted-lottie.json";
+import safeLottie from "../assets/trusted-lottie/safe-lottie.json";
+import securedLottie from "../assets/trusted-lottie/secured-lottie.json";
 
 const AlicePeaceOfMind = () => {
   return (
@@ -17,11 +20,7 @@ const AlicePeaceOfMind = () => {
               <div className="card_item">
                 <div className="card_top">
                   <div className="card_icon is-large">
-                    <DotLottieReact
-                      src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695a5c4711c73bc0524db973_8abd1dac4a727e263b5d06dc05b1c053_potion.lottie"
-                      autoplay
-                      loop
-                    />
+                    <DotLottieReact data={trustedLottie} autoplay loop />
                   </div>
                   <div className="card_heading-large">Trusted</div>
                 </div>
@@ -40,11 +39,7 @@ const AlicePeaceOfMind = () => {
               >
                 <div className="card_top">
                   <div className="card_icon is-large">
-                    <DotLottieReact
-                      src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695bbddc81d4d9b710861037_11270a5754ba156f3f5b0dcaee6cee98_shield.lottie"
-                      autoplay
-                      loop
-                    />
+                    <DotLottieReact data={safeLottie} autoplay loop />
                   </div>
                   <div className="card_heading-large">Safe</div>
                 </div>
@@ -63,11 +58,7 @@ const AlicePeaceOfMind = () => {
               >
                 <div className="card_top">
                   <div className="card_icon is-large">
-                    <DotLottieReact
-                      src="https://cdn.prod.website-files.com/69005ca0f0832195cbc1370c/695a5c47444a667aa116af1c_ee63e791c01d963d6606bd9789f5d0c6_keyhole.lottie"
-                      autoplay
-                      loop
-                    />
+                    <DotLottieReact data={securedLottie} autoplay loop />
                   </div>
                   <div className="card_heading-large">Secured</div>
                 </div>
